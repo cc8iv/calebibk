@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caleb IBK | Portfolio</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -21,10 +22,18 @@
     <nav>
         <div class="nav-container">
             <div class="logo-header">
-                Caleb <span class="special">IBK.</span>
+                <a href="#">Caleb <span class="special">IBK.</span></a>
             </div>
 
+            <div class="hamburger">
+                <!-- hamburger icon -->
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
             <div class="nav-list">
+
                 <div class="menu">
                     <span><a href="#about">about</a></span>
                     <span><a href="#services">services</a></span>
@@ -33,7 +42,7 @@
                     <span><a href="#contact">contact</a></span>
                 </div>
 
-                <button id="get-quote" class="on-transit-y">Get quote</button>
+                <button id="get-quote" class="on-transit-y"><a href="#contact">Get quote</a></button>
             </div>
         </div>
     </nav>
@@ -53,11 +62,11 @@
 
                 <div class="add-ons">
                     <button class="view-portfolio on-transit-y">
-                        View Portfolio
+                        <a href="#projects">View Portfolio</a>
                     </button>
 
                     <button class="get-quote on-transit-y">
-                        Get quote
+                        <a href="#contact">Get quote</a>
                     </button>
                 </div>
             </div>
@@ -65,6 +74,9 @@
             <div class="hero-image-section">
                 <div class="hero-image-decor"></div>
                 <img src="assets/img/img1.JPG" alt="">
+                <div class="founder">
+                    Founder of <span class="special"> <b>OrdaH</b> Company</span>
+                </div>
             </div>
         </div>
      </section>
@@ -76,7 +88,7 @@
             <div class="about-header-section">
                 <div class="about-tagline tagline">INTRODUCTION</div>
 
-                <div class="about-header-text">
+                <div class="about-header-text header-text">
                     Simplifying life <span class="special">through intelligent systems.</span>
                 </div>
 
@@ -89,7 +101,7 @@
                 <div class="about-text">
                     I am a tech-business enthusiast with a passion for streamlining smart systems across various sectors to simplify life. <br><br>
                     With a strong background in both technology and business, I thrive on finding innovative solutions that bridge the gap between these two domains. <br><br>
-                    My goal is to leverage my expertise to create efficient and user-friendly systems that enhance everyday experiences.
+                    My goal is to leverage my expertise to create efficient and user-friendly systems that enhance everyday experiences. So intentional about that 0.1%.
                 </div>
 
                 <div class="achievements">
@@ -119,7 +131,7 @@
         <div class="services container">
             <div class="services-header">
                 <div class="services-tagline tagline">CORE COMPETENCIES</div>
-                <div class="services-header-text">How I Create Value</div>
+                <div class="services-header-text header-text">How I Create Value</div>
             </div>
 
             <div class="services-list">
@@ -173,7 +185,7 @@
             <div class="projects-header">
                 <div class="main-projects-header">
                     <div class="projects-tagline tagline">A FEW SELECTED PROJECTS</div>
-                    <div class="projects-header-text">Built Systems</div>
+                    <div class="projects-header-text header-text">Built Systems</div>
                 </div>
                 <div class="sub-projects-text">
                     These are a few of my most recent projects. For a more comprehensive list, please feel free to reach out to me directly.
@@ -227,9 +239,14 @@
                         <div class="project-tagline tagline">
                             Front-end Web Development
                         </div>
-                        <h3>Project 4</h3>
+                        <h3>More Projects</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
-                        <a href="">view project <i class="fa-solid fa-arrow-right"></i> </a>
+                    </div>
+
+                    <div class="project-link">
+                            <a href="" class="first-btn-effect">view all projects <i class="fa-solid fa-arrow-right"></i> </a>
+                            <a href="" class="first-btn-effect">view all projects <i class="fa-solid fa-arrow-right"></i> </a>
+                            <a href="" class="first-btn-effect">view all projects <i class="fa-solid fa-arrow-right"></i> </a>
                     </div>
                 </div>
             </div>
@@ -242,7 +259,7 @@
         <div class="philosophy container">
             <div class="philosophy-header">
                 <div class="philosophy-tagline tagline">MY PHILOSOPHY</div>
-                <div class="philosophy-header-text">"True leadership in technology is not just about the <span class="special">speed of execution</span>, but the <span class="special">integrity of the system</span> and the <u>liberation of the mind.</u>"</div>
+                <div class="philosophy-header-text header-text">"True leadership in technology is not just about the <span class="special">speed of execution</span>, but the <span class="special">integrity of the system</span> and the <u>liberation of the mind.</u>"</div>
             </div>
             <div class="philosophy-desc">
                 <p class="on-transit-y"><b> <i class="fa-solid fa-lightbulb"></i> Innovation:</b> I am committed to pushing the boundaries of technology and business to create innovative solutions that drive progress and improve lives.</p>
@@ -262,8 +279,8 @@
         <div class="contact container">
             <div class="contact-header">
                 <div class="contact-tagline tagline">COLLABORATION</div>
-                <div class="contact-header-text">Let's Design <br> <span class="special">the Future.</span></div>
-                <div class="contact-sub-text">Whether you're looking to scale your engineering team, develop a groundbreaking product, or seeking strategic mentorship, I am ready to initiate the dialogue.</div>
+                <div class="contact-header-text header-text">Let's Design <br> <span class="special">the Future.</span></div>
+                <div class="contact-sub-text">Whether you're looking to scale your engineering team, develop a groundbreaking product, or seeking strategic mentorship, I'm ready to initiate the dialogue.</div>
 
                 <div class="contact-details">
                     <div class="contact-detail phone">
@@ -272,19 +289,19 @@
                         </div>
                         <div class="contact-item">
                             <span class="contact-title">PHONE</span>
-                            <a href=""></a>
+                            <a href="tel:+2349079129746">09079129746</a>
                         </div>
                     </div>
-                    <div class="contact-detail phone">
+                    <div class="contact-detail email">
                         <div class="contact-icon">
                             <i class="fa-solid fa-envelope"></i>
                         </div>
                         <div class="contact-item">
                             <span class="contact-title">EMAIL</span>
-                            <a href=""></a>
+                            <a href="mailto:crownedx.creativ@gmail.com">crownedx.creativ@gmail.com</a>
                         </div>
                     </div>
-                    <div class="contact-detail phone">
+                    <div class="contact-detail socials">
                         <div class="contact-icon">
                             <a href=""><i class="fa-brands fa-facebook"></i></a>
                             <a href=""><i class="fa-brands fa-instagram"></i></a>
@@ -298,8 +315,47 @@
                     </div>
                 </div>
             </div>
+
+            <div class="contact-form">
+                <form action="">
+                    <div class="input-field">
+                        <label for="name">YOUR NAME</label>
+                        <input type="text" id="name" name="name" placeholder="Ex. Caleb Ibewachi">
+                    </div>
+                    <div class="input-field">
+                        <label for="email">EMAIL ADDRESS</label>
+                        <input type="email" id="email" name="email" placeholder="Ex. caleb@example.com">
+                    </div>
+                    <div class="input-field">
+                        <label for="objective">OBJECTIVE</label>
+                        <select name="objective" id="objective">
+                            <option class="option" value="development">Develop a Smart System</option>
+                            <option class="option" value="collaboration">Collaboration</option>
+                            <option class="option" value="mentorship">Mentorship</option>
+                            <option class="option" value="consultation">Consultation</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label for="message">MESSAGE</label>
+                        <textarea id="message" name="message" placeholder="Ex. I'm interested in working with you..."></textarea>
+                    </div>
+                    <button type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
         </div>
      </section>
     <!-- CONTACT SECTION END -->
+
+    <!-- FOOTER SECTION -->
+     <footer>
+        <div class="footer container">
+            &copy; 2026 Caleb IBK. All rights reserved. I'm always <b>Crowned, Creativ.</b>
+        </div>
+     </footer>
+    <!-- FOOTER SECTION END -->
+
+
+    <!-- SCRIPTS -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
