@@ -212,6 +212,12 @@
     .contact-header, .contact-form{
         width: 100%;
     }
+
+    .socials {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
     /* CONTACT SECTION END */
     
 }
