@@ -4,10 +4,11 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
+    font-weight: 300;
 }
 
 :root {
-    --primary-color: #0c61ff;
+    --primary-color: #1466fe;
     --border-color: #ffffff19;
     --glass-card: linear-gradient(35deg,
     rgba(255, 255, 255, 0.03),
@@ -30,7 +31,7 @@ body {
     background-color: #050505;
     color: #fff;
     font-family: "Poppins";
-    font-weight: 300;
+    width: 100%;
 }
 
 body::after {
@@ -77,9 +78,9 @@ div.bg-decoration-container>div{
 div.radial-box {
     width: 500px;
     height: 500px;
-    background: radial-gradient(#00279d18, #00000000);
+    background: radial-gradient(#0034ce18, #00218202);
     backdrop-filter: blur(57px);
-    opacity: .6;
+    opacity: .575;
     border-radius: 100%;
 }
 
@@ -213,7 +214,6 @@ div.nav-container {
 .nav-list .menu a {
     color: var(--text-light-gray);
     font-size: 0.95rem;
-    font-weight: 100;
 }
 
 .nav-list .menu a:hover {
@@ -327,7 +327,7 @@ section#hero {
     z-index: 0;
 
     font-size: 0.85rem;
-    font-weight: 100;
+    /* font-weight: 100; */
     letter-spacing: normal;
 }
 
@@ -364,7 +364,7 @@ section#hero {
 
 .hero-sub-text {
     font-size: 1rem;
-    font-weight: 100;
+    /* font-weight: 100; */
     color: #ffffff80;
 }
 
@@ -593,7 +593,7 @@ section#about {
 
 .about-text {
     font-size: 1.6lvw;
-    font-weight: 100;
+    /* font-weight: 100; */
     line-height: 2rem;
     color: var(--text-light-gray);
 }
@@ -619,7 +619,7 @@ section#about {
 
 .achievement-text {
     font-size: 0.75rem;
-    font-weight: 100;
+    /* font-weight: 100; */
     color: var(--primary-color);
 }
 /* ABOUT SECTION END */
@@ -696,7 +696,6 @@ section#services {
 .service-card p {
     font-size: 0.85rem;
     line-height: 1.25rem;
-    font-weight: 100;
     color: var(--text-light-gray);
 }
 /* SERVICES SECTION END */
@@ -730,7 +729,6 @@ section#projects {
 .sub-projects-text{
     width: 40%;
     font-size: 0.93rem;
-    font-weight: 100;
     line-height: 1.2rem;
     color: var(--text-light-gray);
 }
@@ -843,7 +841,6 @@ section#projects {
 }
 
 .project-desc p{
-    font-weight: 100;
     color: var(--text-light-gray);
 }
 /* PROJECTS SECTION END */
@@ -894,7 +891,6 @@ section#philosophy::after {
 
 .philosophy-header-text {
     font-size: 3.87lvw;
-    font-weight: 100;
     font-style: italic;
 }
 
@@ -916,7 +912,6 @@ section#philosophy::after {
     width: 50%;
     min-height: 230px;
     font-size: 1.1rem;
-    font-weight: 100;
     line-height: 2rem;
     color: var(--text-light-gray);
 
@@ -966,7 +961,6 @@ section#contact {
 
 .contact-header-text {
     font-size: 3.87lvw;
-    font-weight: 100;
     /* font-style: italic; */
 }
 
@@ -987,7 +981,6 @@ section#contact {
 
 .contact-sub-text{
     font-size: 1.1rem;
-    font-weight: 100;
     line-height: 2rem;
     color: var(--text-light-gray);
 }
@@ -1029,7 +1022,7 @@ section#contact {
 
 .contact-title {
     font-size: .75rem;
-    font-weight: 100;
+    /* font-weight: 100; */
     color: var(--text-mid-gray);
 }
 
