@@ -26,12 +26,17 @@
     --text-mid-gray: #ffffff5b;
 }
 
+
+b {
+    font-weight: 600;
+}
+
 body {
     position: relative;
     background-color: #050505;
     color: #fff;
     font-family: "Poppins";
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -752,7 +757,7 @@ section#projects {
     gap: 10px;
     flex: 1 0 46%;
     min-width: 300px;
-    height: 350px;
+    min-height: 450px;
     /* width: 23%; */
     padding: 35px 40px;
     
@@ -767,13 +772,13 @@ section#projects {
 }
 
 .project-card:nth-of-type(4){
-    flex-direction: row;
+    /* flex-direction: row;
     justify-content: space-between;
-    align-items: end;
+    align-items: end; */
     /* height: 100%; */
 }
 .project-card:nth-of-type(4) .project-desc {
-    width: 45%;
+    /* width: 45%; */
 }
 
 .project-card:nth-of-type(4) .project-desc h3 {
@@ -808,20 +813,20 @@ section#projects {
 }
 
 .project-card img{
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: flex;
     width: 100%;
-    /* min-height: 200px; */
     border: none;
-    height: 100%;
     object-fit: cover;
 
     background: var(--glass-card);
-    backdrop-filter: blur(17px);
+    filter: grayscale(100%) brightness(90%) /* hue for royal blue color */ hue-rotate(200deg);
 
-    z-index: -1;
+    z-index: 1;
+    transition: 0.3s all ease;
+}
 
+.project-card img:hover{
+    filter: grayscale(0%) brightness(100%);
 }
 
 .project-desc {
@@ -829,6 +834,7 @@ section#projects {
     flex-direction: column;
     gap: 10px;
     z-index: 1;
+    
 }
 
 .project-tagline {
