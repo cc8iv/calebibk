@@ -38,3 +38,21 @@
     }, observerOptions);
 
     sections.forEach(section => observer.observe(section));
+
+
+    // contact form
+    document.querySelector('.contact-form form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    // These IDs must match your EmailJS dashboard values
+    const serviceID = 'service_v44s539';
+    const templateID = 'template_d5pdbwn';
+
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            alert('Email sent successfully!');
+        }, (err) => {
+            alert('Failed to send email: ' + JSON.stringify(err));
+        });
+    });
+
